@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Driveway Mobile Mechanics LLC - Official mobile mechanic service in Tri-Cities, TN. Expert repairs for automotive, aircraft, and boats in Johnson City, Kingsport, Bristol, and surrounding areas.">
+    <meta name="description" content="Driveway Mobile Mechanics LLC - Premier mobile mechanic services in Tri-Cities, TN. Expert repairs for cars, aircraft, and boats in Johnson City, Kingsport, Bristol, and beyond.">
     <meta name="keywords" content="mobile mechanic Tri-Cities TN, Johnson City car repair, Kingsport aircraft maintenance, Bristol boat repair, Gray mechanic, Elizabethton automotive service, Hampton vehicle repair, professional mechanic">
-    <meta property="og:title" content="Driveway Mobile Mechanics LLC - Official Site">
-    <meta property="og:description" content="Premier mobile mechanic services for all vehicles in Tri-Cities, TN. Call (423) 302-8474.">
+    <meta property="og:title" content="Driveway Mobile Mechanics LLC - Premier Mobile Services">
+    <meta property="og:description" content="Top-tier mobile mechanic services in Tri-Cities, TN. Call (423) 302-8474 today!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://drivewaymobilemechanicsllc.github.io/DrivewayMobileMechanicsLLC/">
     <meta property="og:image" content="https://drivewaymobilemechanicsllc.github.io/DrivewayMobileMechanicsLLC/images/logo.png">
     <title>Driveway Mobile Mechanics LLC | Tri-Cities, TN</title>
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <header>
         <div class="logo">
             <h1>Driveway Mobile Mechanics LLC</h1>
-            <p>Premier Mobile Repair Services</p>
+            <p>Your Premier Mobile Repair Experts</p>
         </div>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#calculator">Cost Calculator</a></li>
                 <li><a href="#booking">Book Now</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home" class="hero">
-            <h2>Welcome to Your Trusted Mobile Mechanic</h2>
-            <p>Expert repairs for cars, aircraft, and boats across Tri-Cities, TN. We come to you!</p>
-            <p><strong>Call Now:</strong> <a href="tel:+14233028474">(423) 302-8474</a></p>
-            <a href="#booking" class="btn">Schedule Service</a>
+            <div class="hero-content">
+                <h2>Welcome to Driveway Mobile Mechanics</h2>
+                <p>We bring expert repairs to your doorstep across Tri-Cities, TN.</p>
+                <p><strong>Call Now:</strong> <a href="tel:+14233028474">(423) 302-8474</a></p>
+                <a href="#booking" class="btn">Get Started</a>
+            </div>
         </section>
         <section id="about">
-            <h2>About Our Company</h2>
-            <p>Driveway Mobile Mechanics LLC, based in Johnson City, TN, offers professional repair services for all vehicle types. Serving Johnson City, Kingsport, Bristol, Gray, Elizabethton, Hampton, and the Tri-Cities region, we bring expertise and convenience directly to your location.</p>
+            <h2>About Our Team</h2>
+            <p>Based in Johnson City, TN, Driveway Mobile Mechanics LLC is your trusted partner for automotive, aircraft, and boat repairs. Our certified technicians serve Johnson City, Kingsport, Bristol, Gray, Elizabethton, Hampton, and the entire Tri-Cities region with unmatched professionalism.</p>
+            <div class="team-grid">
+                <div class="team-member"><strong>Wes</strong><br>Founder & Lead Mechanic</div>
+                <div class="team-member"><strong>Sarah</strong><br>Aircraft Specialist</div>
+            </div>
         </section>
         <section id="services">
-            <h2>Our Professional Services</h2>
+            <h2>Our Expert Services</h2>
             <div class="service-list">
                 <div class="service-item"><strong>Engine Diagnostics</strong><br>$60+</div>
                 <div class="service-item"><strong>Brake Repairs</strong><br>$100+</div>
@@ -52,10 +66,23 @@
                 <div class="service-item"><strong>Boat Repairs</strong><br>Call for Quote</div>
                 <div class="service-item"><strong>Roadside Assistance</strong><br>Call for Rates</div>
             </div>
-            <p>Available in Tri-Cities, TN and surrounding areas.</p>
+        </section>
+        <section id="calculator">
+            <h2>Service Cost Calculator</h2>
+            <div id="calc-form">
+                <label for="calc-service">Select Service</label>
+                <select id="calc-service">
+                    <option value="60">Engine Diagnostics ($60+)</option>
+                    <option value="100">Brake Repairs ($100+)</option>
+                    <option value="40">Oil Change ($40)</option>
+                </select>
+                <label for="distance">Distance (miles)</label>
+                <input type="number" id="distance" min="0" value="0">
+                <p>Estimate: $<span id="calc-result">60</span></p>
+            </div>
         </section>
         <section id="booking">
-            <h2>Schedule Your Appointment</h2>
+            <h2>Book Your Service</h2>
             <form id="booking-form" aria-label="Service Booking Form">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="John Doe" required aria-required="true">
@@ -78,25 +105,44 @@
                 <button type="submit" class="btn">Submit Booking</button>
             </form>
         </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>What areas do you serve?</summary>
+                    <p>We cover Johnson City, Kingsport, Bristol, Gray, Elizabethton, Hampton, and the Tri-Cities region.</p>
+                </details>
+                <details>
+                    <summary>Do you offer emergency services?</summary>
+                    <p>Yes, call (423) 302-8474 for roadside assistance and urgent repairs.</p>
+                </details>
+            </div>
+        </section>
         <section id="testimonials">
-            <h2>Client Testimonials</h2>
-            <div class="testimonial-grid">
-                <blockquote><p>"Exceptional service! Fixed my truck in Johnson City in no time."</p><cite>– Tom R., Johnson City</cite></blockquote>
-                <blockquote><p>"Professional boat repair right at Bristol Marina."</p><cite>– Emily S., Bristol</cite></blockquote>
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <blockquote><p>"Fast, reliable service in Kingsport!"</p><cite>– Mike T., Kingsport</cite></blockquote>
+                <blockquote><p>"Saved my boat trip in Bristol."</p><cite>– Lisa W., Bristol</cite></blockquote>
             </div>
         </section>
         <section id="contact">
-            <h2>Contact Information</h2>
+            <h2>Get in Touch</h2>
             <p><strong>Phone:</strong> <a href="tel:+14233028474">(423) 302-8474</a></p>
             <p><strong>Email:</strong> <a href="mailto:wes@drivewaymobilemechanics.com">wes@drivewaymobilemechanics.com</a></p>
             <p><strong>Office:</strong> Johnson City, TN, 37615</p>
-            <p><strong>Service Areas:</strong> Johnson City, Kingsport, Bristol, Gray, Elizabethton, Hampton, Tri-Cities, TN</p>
+            <p><strong>Service Areas:</strong> Tri-Cities, TN & Beyond</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Driveway Mobile Mechanics LLC. All Rights Reserved.</p>
-        <p><a href="https://www.facebook.com/DrivewayMobileMechanicsLLC" target="_blank" rel="noopener">Facebook</a> | <a href="tel:+14233028474">(423) 302-8474</a></p>
+        <div class="footer-content">
+            <p>© 2025 Driveway Mobile Mechanics LLC. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/DrivewayMobileMechanicsLLC" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="tel:+14233028474" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
     </footer>
+    <div id="chat-widget" aria-label="Live Chat Placeholder">Live Chat (Coming Soon)</div>
     <script src="js/script.min.js"></script>
 </body>
 </html>
